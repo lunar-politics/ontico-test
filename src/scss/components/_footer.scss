@@ -1,0 +1,136 @@
+.footer {
+  padding-top: 58px;
+  background-color: #262529;
+  color: var(--light-color);
+  background-image: url('../../img/footer-img.png');
+  background-repeat: no-repeat;
+  background-size: 58% auto;
+  background-position: right top;
+
+  &-contacts {
+    margin-bottom: 54px;
+
+    &__text {
+      max-width: 589px;
+    }
+
+    &__title {
+      margin: 0 0 7px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &__descr {
+      margin: 0 0 21px;
+      font-size: 18px;
+      line-height: 23px;
+
+      a {
+        color: var(--light-color);
+        transition: color .3s ease-in-out, border .3s ease-in-out;
+
+        &:hover {
+          color: #b76bfa;
+        }
+
+        &:focus {
+          outline: none;
+          color: #b76bfa;
+          border-bottom: 1px solid #b76bfa;
+        }
+
+        &:active {
+          color: #c289f5;
+        }
+      }
+    }
+
+    &__address {
+      font-size: 18px;
+      font-style: normal;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 34px;
+
+    &__title {
+      margin-right: auto;
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: -2px;
+    }
+
+    &__list {
+      display: flex;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -17px;
+        width: 100%;
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.35);
+      }
+
+    }
+
+    &__item {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 56px;
+      }
+      &--active {
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: -20px;
+          transform: translateX(-50%);
+          left: 50%;
+          width: 35px;
+          height: 10px;
+          background-color: var(--light-color);
+          border-radius: 10px;
+        }
+      }
+    }
+
+    &__link {
+      font-size: 18px;
+      color: var(--light-color);
+      transition: color .3s ease-in-out;
+
+      &:hover {
+        color: #b76bfa;
+      }
+
+      &:focus {
+        outline: none;
+        color: #b76bfa;
+        border-bottom: 1px solid #b76bfa;
+      }
+
+      &:active {
+        color: #c289f5;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: -20px;
+          transform: translateX(-50%);
+          left: 50%;
+          width: 35px;
+          height: 10px;
+          background-color: var(--light-color);
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
