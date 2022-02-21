@@ -1,5 +1,6 @@
 .footer {
   padding-top: 58px;
+  padding-bottom: 105px;
   background-color: #262529;
   color: var(--light-color);
   background-image: url('../../img/footer-img.png');
@@ -53,12 +54,16 @@
 
   &-nav {
     display: flex;
+    position: fixed;
+    bottom: 0;
     align-items: center;
-    padding-left: 25px;
-    padding-right: 34px;
+    padding: 20px 8% 33px 7%;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #262529;
 
     &__title {
-      margin-right: auto;
+      margin: 0 auto 0 0;
       font-size: 36px;
       font-weight: 600;
       letter-spacing: -2px;
